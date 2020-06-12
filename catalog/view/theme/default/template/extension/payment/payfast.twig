@@ -1,0 +1,24 @@
+<form action="{{ action }}" method="post">
+  <input type="hidden" name="MERCHANT_ID" value="{{ MERCHANT_ID }}" />
+  <input type="hidden" name="MERCHANT_NAME" value="{{ MERCHANT_NAME }}" />
+  
+  <input type="hidden" name="TOKEN" value="{{ TOKEN }}" />
+  <input type="hidden" name="SUCCESS_URL" value="{{ SUCCESS_URL }}" />
+  <input type="hidden" name="FAILURE_URL" value="{{ FAILURE_URL }}" />
+  <input type="hidden" name="CHECKOUT_URL" value="{{ CHECKOUT_URL }}" />  
+  <input type="hidden" name="CUSTOMER_EMAIL_ADDRESS" value="{{ CUSTOMER_EMAIL_ADDRESS }}" />
+  <input type="hidden" name="CUSTOMER_MOBILE_NO" value="{{ CUSTOMER_MOBILE_NUMBER }}" />
+  <input type="hidden" name="TXNAMT" value={{ TXNAMT }} />
+  <input type="hidden" name="BASKET_ID" value="{{ BASKET_ID }}" />
+  <input type="hidden" name="ORDER_DATE" value="{{ ORDER_DATE }}" />
+  <input type="hidden" name="SIGNATURE" value="{{ SIGNATURE }}" />
+  <input type="hidden" name="VERSION" value="{{ VERSION }}" />
+  <input type="hidden" name="TXNDESC" value="{{ TXNDESC }}" />
+  <input type="hidden" name="PROCCODE" value=0 />
+  
+  <div class="buttons">
+    <div class="pull-right">
+      <input type="submit" value="{{ button_confirm }}" class="btn btn-primary" />
+    </div>
+  </div>
+</form>
